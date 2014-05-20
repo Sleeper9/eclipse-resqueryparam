@@ -2,19 +2,12 @@
 <?eclipse version="3.4"?>
 <plugin>
 
-   <extension
-         point="org.eclipse.ui.propertyPages">
-      <page
-            name="ResourceQP"
-            nameFilter="*.*"
-            class="resourcequeryparamizer.properties.ResQPProperties"
-            id="resourcequeryparamizer.properties.samplePropertyPage">
-         <enabledWhen>
-            <instanceof
-                  value="org.eclipse.core.resources.IFile">
-            </instanceof>
-         </enabledWhen>
-      </page>
+  <extension
+  	point = "org.eclipse.ui.preferencePages">
+       <page id="com.frontendart.resqp.prefs.Preferences"
+	    class="com.frontendart.resqp.prefs.Preferences"
+            name="ResourceQP">
+       </page>
    </extension>
 
 </plugin>
